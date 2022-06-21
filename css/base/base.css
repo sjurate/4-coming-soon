@@ -11,4 +11,19 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
 }
-;
+
+:root {
+    /* variables */ 
+    --main-color: #03A9F5;
+    --secondary-color: #E81F63;
+    --shadow: 0 4px 8px #0003; 
+}
+
+.bg-main {
+    background-color: var(--main-color);
+    box-shadow: var(--shadow);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
