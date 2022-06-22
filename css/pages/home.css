@@ -13,3 +13,48 @@
 @import '../components/progress-bar.css';
 
 /* CUSTOM STYLE GOES BELOW THIS LINE */ 
+
+.hero {
+    padding-bottom: 20px;
+}
+
+.hero > .row-short {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.main-description {
+    font-size: 15px;
+}
+
+.explain {
+    display: block;
+}
+
+.clock {
+    margin: 40px 0;
+}
+
+footer.container.bg-main {
+    padding-top: 0;
+}
+
+@media (max-width: 500px) {
+    .main-title {
+        font-size: 45px;
+    }
+}
