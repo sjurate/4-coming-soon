@@ -89,8 +89,32 @@
     text-decoration: underline;
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    flex-wrap: wrap;
+}
 
+.socials a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
 
+.socials a:hover {
+    color: var(--main-color);
+    background-color: #fff;
+
+}
 /* MAIN END */
 
 
