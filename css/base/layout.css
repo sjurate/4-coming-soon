@@ -6,13 +6,11 @@
 .container > .row {
     width: 1000px;
     margin: 0 calc(50% - 500px);
-    background-color: pink;
 }
 
 .container > .row-short {
     width: 600px;
     margin: 0 calc(50% - 300px);
-    background-color: bisque;
 }
 
 @media (max-width: 1100px) {
