@@ -7,7 +7,8 @@
 
 /* component */
 @import '../components/button.css';
-@import '../components/clock.css';
+/* @import '../components/clock-flex.css';*/
+@import '../components/clock-grid.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
@@ -17,6 +18,12 @@
 /* HERO START */
 .hero {
     padding-bottom: 20px;
+    background-image: url(../../img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero > .row-short {
@@ -34,21 +41,19 @@
 }
 
 .main-title {
-    font-size: 60px;
+    font-size: 65px;
     text-transform: uppercase;
 }
 
 .main-description {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .explain {
     display: block;
 }
 
-.clock {
-    margin: 40px 0;
-}
+
 /* HERO END */
 
 /* MAIN START */
@@ -90,7 +95,6 @@
 }
 
 
-
 /* MAIN END */
 
 
@@ -98,7 +102,85 @@
 
 footer.container.bg-main {
     padding-top: 0;
+    text-align: center;
+    line-height: 1.6em;
 }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    flex-wrap: wrap;
+}
+
+.socials a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.socials a:hover {
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+.footer-logo {
+    margin: 35px 0;
+    height: 40px;
+    width: 100%;
+    object-fit: contain;
+
+}
+.credits {
+    display: flex;
+    gap: 30px;
+    color: #fff8;
+    justify-content: center;
+}
+
+.credits > p> a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.credits > p {
+    position: relative;
+}
+
+.credits > p::after {
+    content: '';
+    display: block;
+    height: 16px;
+    width: 2px;
+    background-color: #fff8; 
+    position: absolute;
+    top: 50%;
+    right: -15px; 
+    transform: translateY(-50%) translateX(50%);
+}
+
+.credits > p:last-child::after {
+    display: none;
+
+}
+
+.footer-text {
+    color: #fff8;
+}
+.footer-text > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
 /* FOOTER END */
 
@@ -111,4 +193,19 @@ footer.container.bg-main {
 @media (max-width: 700px) {
     .main-content {
         flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .main-content > * {
+        width: 100%;
+    }
+
+    .credits > p::after {
+        display: none;
+    }
+
+    .credits {
+        flex-direction: column;
+        row-gap: 5px;
+    }
 }
