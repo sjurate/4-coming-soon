@@ -18,6 +18,12 @@
 /* HERO START */
 .hero {
     padding-bottom: 20px;
+    background-image: url(../../img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero > .row-short {
