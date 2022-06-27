@@ -1,0 +1,32 @@
+.clock {
+    margin: 40px 20px;
+    font-size: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    color: #fff;
+}
+
+.clock > .time {
+}
+
+.clock > .time > .value {
+}
+
+.clock > .time > .label {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .clock {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 440px) {
+    .clock {
+    grid-template-columns: 1fr;
+    font-size: 50px;
+    }
+}
