@@ -7,7 +7,8 @@
 
 /* component */
 @import '../components/button.css';
-@import '../components/clock.css';
+/* @import '../components/clock-flex.css';*/
+@import '../components/clock-grid.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
@@ -46,9 +47,7 @@
     display: block;
 }
 
-.clock {
-    margin: 40px 0;
-}
+
 /* HERO END */
 
 /* MAIN START */
