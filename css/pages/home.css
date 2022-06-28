@@ -114,6 +114,7 @@ footer.container.bg-main {
     padding: 20px 0;
     border-bottom: 2px solid #fff;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .socials a {
@@ -131,6 +132,22 @@ footer.container.bg-main {
 .socials a:hover {
     color: var(--main-color);
     background-color: #fff;
+}
+
+.socials > .back-to-top {
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    background-color: var(--secondary-color);
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+}
+
+.socials > .back-to-top:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+    tran
 }
 
 .footer-logo {
@@ -196,17 +213,17 @@ footer.container.bg-main {
         flex-direction: column;
         row-gap: 40px;
     }
-
     .main-content > * {
         width: 100%;
     }
-
     .credits > p::after {
         display: none;
     }
-
     .credits {
         flex-direction: column;
         row-gap: 5px;
+    }
+    .socials > .back-to-top {
+        display: none;
     }
 }
