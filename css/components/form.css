@@ -1,0 +1,104 @@
+
+/*HERO FORM*/
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+
+}
+.subscribe-form label {
+    justify-self: start;
+    color: #fff;
+}
+
+.subscribe-form input {
+    width: 100%;
+    color:#fff;
+    font-size: 20px;
+    line-height: 1.2em;
+    padding: 0.4em 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.subscribe-form input:focus {
+    outline: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.subscribe-form > button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 0.8em 1.2em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    width: 30%;
+    justify-self: center;
+}
+
+
+
+
+
+/* CONTENT FORM*/
+
+
+.form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form > .form-group-2 {
+    grid-column: span 2;
+    width: 100%;
+}
+.form input,
+.form textarea {
+    width: 100%;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.2em;
+    padding: 0.4em 0;
+    border: none;
+    border-bottom: 1px solid #777;
+    font-family: inherit;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 1px solid var(--secondary-color);
+}
+
+.form textarea {
+    min-height: 100px;
+    max-height: 400px;
+    resize: vertical;
+}
+.form > button {
+    grid-column-end: -1;
+    grid-column: span 2;
+    justify-self: end;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 0.8em 1.2em;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+    .form > .form-group-2,
+    .form > button {
+        grid-column: span 1;
+    }
+}

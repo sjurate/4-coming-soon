@@ -42,8 +42,10 @@
                     <p class="label">Seconds</p>
                 </div>
             </div>
-            <form class="subscribe">
-                SUBSCRIPTION FORM
+            <form class="subscribe-form">
+                    <label for="subscribe-email">Your email</label>
+                    <input id="subscribe-email" type="text" placeholder="Type here...">
+                    <button type="submit">Subscribe now</button>
             </form>
             <div class="mouse"></div>
         </div>
@@ -85,7 +87,22 @@
             <div class="column column-right">
                 <h2 class="column-title">Have any question?</h2>
                 <p class="column-description">You can use contact form below or you can contact us via email at <a href="mailto:petras@pastas.lt" target="_blank">petras@pastas.lt</a>. Contact form is fully working and very easy to customize.</p>
-                <form>MESSAGE FORM</form>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" placeholder="Text here..." id="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" placeholder="Text here..." id="Email">
+                    </div>
+                    <div class="form-group-2">
+                        <label for="Message">Message</label>
+                        <textarea name="" id="Message" placeholder="Text here..." id="Message"></textarea>
+                    </div>
+
+                    <button type="submit">Send message</button>
+                </form>
             </div>
     </section>
 
